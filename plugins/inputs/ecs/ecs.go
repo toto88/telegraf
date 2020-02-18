@@ -240,7 +240,7 @@ func (ecs *Ecs) createContainerStatusFilters() error {
 func init() {
 	inputs.Add("ecs", func() telegraf.Input {
 		return &Ecs{
-			EndpointURL:    "http://169.254.170.2",
+			EndpointURL:    "${ECS_CONTAINER_METADATA_URI}",
 			Timeout:        internal.Duration{Duration: 5 * time.Second},
 			newClient:      NewClient,
 			filtersCreated: false,

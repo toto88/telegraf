@@ -9,8 +9,8 @@ import (
 )
 
 var (
-	ecsMetadataPath, _  = url.Parse("/v2/metadata")
-	ecsMetaStatsPath, _ = url.Parse("/v2/stats")
+	ecsMetadataPath, _  = url.Parse("")
+	ecsMetaStatsPath, _ = url.Parse("/stats")
 )
 
 // Client is the ECS client contract
