@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	ecsMetadataPath, _  = url.Parse("")
+	ecsMetadataPath, _  = url.Parse("/task")
 	ecsMetaStatsPath, _ = url.Parse("/stats")
 )
 

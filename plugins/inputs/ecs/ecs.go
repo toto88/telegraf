@@ -44,7 +44,7 @@ const (
 
 var sampleConfig = `
   ## ECS metadata url
-  # endpoint_url = "http://169.254.170.2"
+  # endpoint_url = "${ECS_CONTAINER_METADATA_URI}"
 
   ## Containers to include and exclude. Globs accepted.
   ## Note that an empty array for both will include all containers
